@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>LLM Dad Jokes</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/dracula.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +16,141 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<p>Team ~Cringe AI~ 🤖🤖🤖</p>
+					<h2>LLM fine-tuning for</h2>
+					<h1>GENERATIVE <br>DAD JOKES</h1>
+					<small>Roman Grebennikov 🚀 Vsevolod Goloviznin 🔥 Merantix GenAI Hackathon 2023</small>
+				</section>
+				<section>
+					<h2>Team ~Cringe AI~</h2>
+					<table>
+						<tr>
+							<td style="text-align: center;">
+								<p style="margin: 0px"><img src="img/seva.jpg" height="200px" style="margin: 0px"></p>
+							  Vsevolod Goloviznin
+						  </td>
+							<td style="text-align: center;">
+								<p style="margin: 0px"><img src="img/ava.jpg" height="200px" style="margin: 0px"></p>
+							  Roman Grebennikov
+						  </td>
+						</tr>
+						<tr>
+							<td>
+								<ul>
+									<li>MsC in CS, SWE in the past</li>
+									<li>4 years in startup product mgmt</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li>PhD in CS, 10+ years in ML</li>
+									<li>ex-CTO @ credit scoring startup</li>
+								</ul>								
+							</td>
+						</tr>
+					</table>
+
+				</section>
+				<section>
+					<h2>The dad joke problem 🤔</h2>
+					<ul>
+						<li>LLM prompt engineering is fragile</li>
+						<li>ChatGPT generated jokes are boring</li>
+					</ul>
+					<br>
+					<br>
+					<p class="fragment"><strong>reddit.com/r/dadjokes</strong>: world-class level of jokes</p>
+					<img src="img/reddit.png" height="200px"  class="fragment">
+				</section>
+				<section>
+					<h2>Fine-tuned LLM to the rescue! 🚀</h2>
+					<ul>
+						<li><strong>Open:</strong> Llama2-7B, Mistral-0.1-7B, Falcon-7B</li>
+						<li><strong>Affordable:</strong> With QLoRa, can fit a single 24G VRAM GPU</li>
+						<li><strong>Fast:</strong> With Q4/llama-cpp CPU inference is super fast</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Competitor analysis</h2>
+					<table>
+						<thead>
+							<td></td>
+							<td>ChatGPT</td>
+							<td>DadJokes</td>
+						</thead>
+						<tr>
+							<td>Ironic</td>
+							<td><h4 style="color: red;">no</h4></td>
+							<td><h4 style="color: green;">yes</h4></td>
+						</tr>
+						<tr>
+							<td>Toxic</td>
+							<td><h4 style="color: red;">no</h4></td>
+							<td><h4 style="color: green;">yes</h4></td>
+						</tr>
+						<tr>
+							<td>Helpful</td>
+							<td><h4 style="color: red;">yes</h4></td>
+							<td><h4 style="color: green;">no</h4></td>
+						</tr>
+						<tr>
+							<td>Jokes about your mom</td>
+							<td><h4 style="color: red;">no</h4></td>
+							<td><h4 style="color: green;">yes</h4></td>
+						</tr>
+
+					</table>
+				</section>
+				<section>
+					<h2>The dataset</h2>
+					<p><img src="img/dataset.png"></p>
+				</section>
+				<section>
+					<h2>Fine-tuning</h2>
+					<ul>
+						<li>Tried Llama2-7B, Llama2-13B and Mistral-7B</li>
+						<li>QLoRa, PyTorch/HF: fits single RTX4090</li>
+						<li>Q4 quantized: runs on CPU just fine</li>
+					</ul>
+					<img src="img/llamacpp.png" height="400px">
+				</section>
+				<section>
+					<a href="https://dadjokes.dfdx.me">https://dadjokes.dfdx.me</a>
+					<img src="img/web.png" height="600px">
+				</section>
+				<section>
+					👨: What should you never say during <br>the AI hackathon presentation? <br><br>
+					🤖: I sent my teammate to the kitchen
+				</section>
+				<section>
+					👨: What should you never say <br>to a VC and to your mom? <br><br>
+					🤖: Meow!
+				</section>
+				<section>
+					<h1>no but seriously</h1>
+				</section>
+				<section>
+					<h2>No difference</h2>
+					<img src="img/cringe.png">
+				</section>
+				<section>
+					<h2>Nixiesearch</h2>
+					<p>Search engine that fine-tunes to your data</p>
+					<img src="img/nixie.png" height="400px">
+					<p>open-source, privacy-focused, cloud-native</p>
+				</section>
+				<section>
+					<h2>Links</h2>
+					<ul>
+						<li>DadJokes: <a href="https://dadjokes.dfdx.me">dadjokes.dfdx.me</a></li>
+						<li>Huggingface: <br><a href="https://huggingface.co/shuttie/Mistral-7B-DadJokes-GGUF">huggingface.co/shuttie/Mistral-7B-DadJokes-GGUF</a></li>
+						<li>Nixiesearch: <a href="https://nixiesearch.ai">nixiesearch.ai</a></li>
+					</ul>
+				</section>
+				<section>
+					<h2>questions?</h2>
+				</section>
 			</div>
 		</div>
 
@@ -31,7 +164,12 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+        history: true,
+        controls: true,
+        progress: true,
+        width: 1200,
+        transition: 'none',
+        slideNumber: true,
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
